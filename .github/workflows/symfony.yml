@@ -3,17 +3,17 @@ name: CI
 on:
   push:
     branches:
-      - '6.4'
+      - '6.4wApi'
   pull_request:
     branches:
-      - '6.4'
+      - '6.4wApi'
 
 env:
   APP_ENV: test
 
 jobs:
   symfony:
-    name: Symfony 6.4 (PHP ${{ matrix.php-versions }})
+    name: Symfony 6.4wApi (PHP ${{ matrix.php-versions }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
